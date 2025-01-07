@@ -5,6 +5,10 @@ import pygame
 from constants import SCREEN_WIDTH, SCREEN_HEIGHT
 from player import Player
 
+updatable = pygame.sprite.Group()
+drawable = pygame.sprite.Group()
+
+Player.containers = (updatable, drawable)
 
 def main():
 	pygame.init()    
@@ -17,15 +21,21 @@ def main():
 	y = SCREEN_HEIGHT / 2
 	player = Player(x,y)
 
+
 	while True:
 		for event in pygame.event.get():
 			if event.type == pygame.QUIT:
 				return
-			
+		
 		screen.fill((0,0,0))
-		player.draw(screen)
+
+		for entity in updatable:
+			entity.update(dt)
+
+		for entity in drawable:
+			entity.draw(screen)
+
 		pygame.display.flip()
 		dt = clock.tick(60) / 1000	
-		player.update(dt)
 if __name__ == "__main__":
     main()
