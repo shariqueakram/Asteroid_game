@@ -45,12 +45,11 @@ def main():
 
 		screen.fill((0,0,0))
 
-		for entity in updatable:
-			entity.draw(screen)
-		
 		for shot in shootables:
-			shot.draw(screen)
-			shot.update(dt)
+			for asteroid in asteroids:
+				if shot.collides_with(asteroid):
+					shot.kill()
+					asteroid.kill()
 
 		for entity in drawable:
 			entity.draw(screen)
