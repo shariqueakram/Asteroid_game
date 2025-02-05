@@ -7,11 +7,17 @@ The game is built using Python and the Pygame library
 
 ## Features
 
-- **Spaceship Controls:** Navigate the spaceship using keyboard inputs.
-- **Asteroid Spawning:** Randomly generated asteroids with varying speeds and directions.
-- **Shooting Mechanism:** Fire bullets to destroy asteroids.
-- **Score Tracking:** Earn points for each asteroid destroyed.
-- **Collision Detection:** Lose the game if an asteroid collides with the spaceship.
+- **Spaceship Controls:** Navigate the spaceship using keyboard inputs
+- **Asteroid Spawning:** Randomly generated asteroids with varying directions
+- **Shooting Mechanism:** Fire bullets to destroy asteroids
+- **Collision Detection:** Lose the game if an asteroid collides with the spaceship
+
+## Gameplay
+
+![Asteroid-Game_gameplay](https://github.com/user-attachments/assets/12e4d8b1-77e2-49c2-a56e-36fbca8f0a0f)
+
+
+
 
 ## Installation
 
@@ -34,22 +40,30 @@ The game is built using Python and the Pygame library
 
 ## Controls
 
-- **WASD Keys:** Move the spaceship.
-- **Spacebar:** Shoot bullets.
-- **Escape:** Exit the game.
+- **Keys:** Move the spaceship
+   - W Forward
+   - S Backward
+   - A Left
+   - D Right
+- **Spacebar:** Shoot bullets
 
 ## Dependencies
 
-- Python 3.x
+- Python
 - Pygame
+
+## Roadmap
+- Scoring
+- Exit key
 
 ## Contributing
 
-Contributions are welcome! Feel free to fork the repository and submit pull requests.
+Contributions are welcome! Feel free to fork the repository and submit pull requests
+
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the MIT License
 
 ## Contact
 
